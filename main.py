@@ -3,13 +3,13 @@ from aiogram.utils import executor
 import motor.motor_asyncio as mt
 from datetime import datetime
 
-API_TOKEN = '6126126956:AAF1CNSusKfw9xp6XGBy48vXAFQhPnkW1qM'
+API_TOKEN = 'BOT_TOKEN'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
 
-clinet = mt.AsyncIOMotorClient('mongodb+srv://meloman:paraxatov11@cluster0.eqlglqy.mongodb.net/DB_test?retryWrites=true&w=majority')
+clinet = mt.AsyncIOMotorClient('MONGODB_LINK')
 collection = clinet.DB_Moder.Collection_Moder_bot
 
 
